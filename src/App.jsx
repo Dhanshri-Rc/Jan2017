@@ -47,7 +47,7 @@ const STYLES = `
   /* ── NAVBAR ─────────────────────────────────────────────── */
   .navbar {
     position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid rgb(165, 139, 72);
     transition: background 0.3s, border-color 0.3s, box-shadow 0.3s;
     background: rgba(7,17,31,0.72);
     backdrop-filter: blur(10px);
@@ -55,7 +55,7 @@ const STYLES = `
   }
   .navbar.scrolled {
     background: rgba(7,17,31,0.97);
-    border-bottom-color: rgba(200,164,74,0.18);
+    border-bottom-color: rgb(221, 190, 112);
     box-shadow: 0 2px 28px rgba(0,0,0,0.45);
   }
   .navbar-inner {
@@ -156,7 +156,8 @@ const STYLES = `
 
   /* ── HERO ────────────────────────────────────────────────── */
   .hero {
-    background: linear-gradient(160deg, var(--navy) 0%, var(--navy-2) 45%, var(--navy-3) 80%, #0f2847 100%);
+    
+  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-2) 45%, var(--navy-3) 80%, #0f2847 100%);
     min-height: 100vh; display: flex; align-items: center;
     padding-top: 66px; position: relative; overflow: hidden;
   }
@@ -197,7 +198,7 @@ const STYLES = `
   }
 
   .hero h1 {
-    font-size: clamp(1.9rem, 4.5vw, 3.45rem);
+    font-size: clamp(1.9rem, 4.5vw, 2.45rem);
     font-weight: 900; color: #fff; line-height: 1.18; margin-bottom: 6px;
   }
   .hero h1 .hl { color: var(--gold-2); font-style: italic; }
@@ -550,12 +551,19 @@ function Hero() {
         </div>
 
         <h1 className="a2">
-          International Conference on<br />
-          <span className="hl">Emerging Technologies,</span><br />
-          Artificial Intelligence &amp;<br />
-          Smart Engineering Systems
+          International Conference on
+          <span className="hl"> Emerging <br />Technologies,</span>
+           Artificial Intelligence &amp;
+          Smart <br />Engineering Systems
         </h1>
-
+ {/* <div className="hero-right a4">
+          <div className="hero-glow" />
+           <img
+            src="https://images.unsplash.com/photo-1677442136019-21780ecad995"
+            alt="AI Illustration"
+            className="hero-img"
+          />
+        </div> */}
         <div className="hero-rule a2" />
 
         <p className="hero-sub a3">
@@ -587,6 +595,57 @@ function Hero() {
     </section>
   );
 }
+
+// function Hero() {
+//   return (
+//     <section id="home" className="hero">
+//       <div className="hero-dots" />
+
+//       <div className="hero-content hero-grid">
+
+//         {/* LEFT CONTENT */}
+//         <div className="hero-left">
+
+//           <div className="hero-badge a1">
+//             <span className="badge-dot" />
+//             SIARE Conference · Aug 2026
+//           </div>
+
+//           <h1 className="hero-title a2">
+//             International Conference on <br />
+//             <span className="hl">AI & Emerging Tech</span>
+//           </h1>
+
+//           <p className="hero-sub a3">
+//             A global platform bringing researchers, engineers, and innovators
+//             together to shape the future of intelligent systems.
+//           </p>
+
+//           <div className="hero-btns a3">
+//             <button className="btn-gold" onClick={() => goTo("submission")}>
+//               Submit Paper
+//             </button>
+//             <button className="btn-ghost" onClick={() => goTo("registration")}>
+//               Register Now
+//             </button>
+//           </div>
+
+//         </div>
+
+//         {/* RIGHT VISUAL */}
+//         <div className="hero-right a4">
+//           <div className="hero-glow" />
+//           <img
+//             src="https://images.unsplash.com/photo-1677442136019-21780ecad995"
+//             alt="AI Illustration"
+//             className="hero-img"
+//           />
+//         </div>
+
+//       </div>
+//     </section>
+//   );
+// }
 
 /* ─────────────────────────────────────────────────────────────
    SECTION HEADER

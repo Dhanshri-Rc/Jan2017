@@ -564,11 +564,108 @@ function Navbar() {
 /* ─────────────────────────────────────────────────────────────
    HERO
 ───────────────────────────────────────────────────────────── */
+// function Hero() {
+//   return (
+//     <section id="home" className="hero">
+//       <div className="hero-dots" />
+//       <div className="hero-content">
+//         <div className="hero-badge a1">
+//           <span className="badge-dot" />
+//           SIARE Conference Series · August 2026 · Boston, USA
+//         </div>
+
+//         <h1 className="a2">
+//           International Conference on
+//           <span className="hl">
+//             {" "}
+//             Emerging <br />
+//             Technologies,
+//           </span>
+//           Artificial Intelligence &amp; Smart <br />
+//           Engineering Systems
+//         </h1>
+//         {/* <div className="hero-right a4">
+//           <div className="hero-glow" />
+//            <img
+//             src="https://images.unsplash.com/photo-1677442136019-21780ecad995"
+//             alt="AI Illustration"
+//             className="hero-img"
+//           />
+//         </div> */}
+//         <div className="hero-rule a2" />
+
+//         <p className="hero-sub a3">
+//           Bridging the frontiers of science, engineering, and societal
+//           transformation through globally collaborative, interdisciplinary
+//           research.
+//         </p>
+
+//         <div className="hero-btns a3">
+//           <button className="btn-gold" onClick={() => goTo("submission")}>
+//             <FileText size={16} /> Submit Paper
+//           </button>
+//           <button className="btn-ghost" onClick={() => goTo("registration")}>
+//             <Users size={16} /> Register Now
+//           </button>
+//           <button className="btn-ghost" onClick={() => goTo("dates")}>
+//             <Calendar size={16} /> Important Dates
+//           </button>
+//         </div>
+
+//         <div className="hero-stats a4">
+//           {[
+//             ["500+", "Expected Delegates"],
+//             ["40+", "Countries"],
+//             ["6", "Research Tracks"],
+//             ["3", "Conference Days"],
+//           ].map(([n, l]) => (
+//             <div key={l}>
+//               <div className="stat-num">{n}</div>
+//               <div className="stat-lbl">{l}</div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
 function Hero() {
   return (
-    <section id="home" className="hero">
+    <section
+      id="home"
+      className="hero"
+      style={{
+        position: "relative",
+        minHeight: "100vh",
+        backgroundImage:
+          "url('https://iet-confrence.vercel.app/assets/c1-KuAvXTI9.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        overflow: "hidden",
+      }}
+    >
+      {/* Overlay for readability */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          background:
+            "linear-gradient(to right, rgba(10,10,20,0.85), rgba(10,10,20,0.6))",
+          zIndex: 1,
+        }}
+      />
+
       <div className="hero-dots" />
-      <div className="hero-content">
+
+      <div
+        className="hero-content"
+        style={{ position: "relative", zIndex: 2 }}
+      >
         <div className="hero-badge a1">
           <span className="badge-dot" />
           SIARE Conference Series · August 2026 · Boston, USA
@@ -584,14 +681,7 @@ function Hero() {
           Artificial Intelligence &amp; Smart <br />
           Engineering Systems
         </h1>
-        {/* <div className="hero-right a4">
-          <div className="hero-glow" />
-           <img
-            src="https://images.unsplash.com/photo-1677442136019-21780ecad995"
-            alt="AI Illustration"
-            className="hero-img"
-          />
-        </div> */}
+
         <div className="hero-rule a2" />
 
         <p className="hero-sub a3">

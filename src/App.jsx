@@ -507,7 +507,7 @@ function Navbar() {
         >
           <div className="logo-icon">IC</div>
           <span className="logo-text">
-            ICEAIT <br /><span className="logo-year">Aug 2026</span>
+            ICEAIT <br /><span className="logo-year">Jan 2017</span>
           </span>
         </button>
 
@@ -668,7 +668,7 @@ function Hero() {
       >
         <div className="hero-badge a1">
           <span className="badge-dot" />
-          SIARE Conference Series · August 2026 · Boston, USA
+          SIARE Conference Series · Jan 2017
         </div>
 
         <h1 className="a2">

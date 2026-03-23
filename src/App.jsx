@@ -507,7 +507,7 @@ function Navbar() {
         >
           <div className="logo-icon">IC</div>
           <span className="logo-text">
-            ICEAIT<span className="logo-year"> 2026</span>
+            ICEAIT <br /><span className="logo-year">Aug 2026</span>
           </span>
         </button>
 
